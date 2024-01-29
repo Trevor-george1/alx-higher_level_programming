@@ -3,4 +3,5 @@
 
 
 class Rectangle:
+    """class that defines a property reactangle"""
     pass
