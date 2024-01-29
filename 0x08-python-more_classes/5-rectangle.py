@@ -73,3 +73,8 @@ class Rectangle:
     """
     def __repr__(self):
         return "Rectangle({}, {})".format(self.__width, self.__height)
+    """
+        __del__
+        prints a message when a recatngle is deleted
+    """
+    print("Bye rectangle...")
