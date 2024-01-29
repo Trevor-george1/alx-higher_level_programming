@@ -38,5 +38,7 @@ class Rectangle:
         return result
     """public instance method perimeter"""
     def perimeter(self):
-        per = 2 * (self.__width + self.__height)
-        return per
+        if self.__height == 0 or self.__width == 0:
+            return 0
+        else:
+            return 2 * (self.__width + self.__height)
