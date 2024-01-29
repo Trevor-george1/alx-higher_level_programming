@@ -77,4 +77,5 @@ class Rectangle:
         __del__
         prints a message when a recatngle is deleted
     """
-    print("Bye rectangle...")
+    def __del__(self):
+        print("Bye rectangle...")
