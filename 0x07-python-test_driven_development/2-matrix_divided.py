@@ -15,5 +15,5 @@ def matrix_divided(matrix, div):
         raise TypeError("Each row of matrix must have same size")
     
     #divide each element by div and round of 2 decimal places
-    result = [[round(element / 3, 2) for element in row] for row in matrix]
+    result = [[round(element / div, 2) for element in row] for row in matrix]
     return result
