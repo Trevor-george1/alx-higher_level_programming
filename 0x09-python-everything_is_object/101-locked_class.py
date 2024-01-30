@@ -8,8 +8,8 @@ class LockedClass:
         except if the new instance attribute is called firstname
     """
     __slots__ = ["first_name"]
+
     def __init__(self):
-        
         """
             creates new instances of locked class
         """
