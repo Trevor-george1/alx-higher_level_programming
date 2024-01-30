@@ -1,8 +1,9 @@
 >>> say_my_name = __import__('3-say_my_name').say_my_name
 
->>> say_my_name()
+>>> say_my_name(None, None)
 Traceback (most recent call last):
-TypeError: say_my_name() is missing 1 required positional arguments: 'first_name'
+	...
+TypeError: first_name must be a string
 
 >>say_my_name("A", "B", "C")
 Traceback (most recent call last):
@@ -23,5 +24,7 @@ TypeError: last_name must be a string
 >>> say_my_name("Alex", "Hamilton")
 My name is Alex Hamilton
 
->>> say_my_name("Alex")
-My name is Alex
+>>> say_my_name("Alex", None)
+Traceback (most recent call last):
+	...
+TypeError: last_name must be a string
