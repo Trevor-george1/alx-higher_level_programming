@@ -45,6 +45,6 @@ ValueError: cannot convert float NaN to integer
 Traceback (most recent call last):
 OverflowError: int too large to convert to float
 
->>> add_integer(int('12'), int('12'))
+>>> add_integer(1, float('inf'))
 Traceback (most recent call last):
-ValueError: invalid literal for int() with base 10: '1e'
+OverflowErrorError: cannot convert float infinity to integer
