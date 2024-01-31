@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 function tha divides all elements of a matrix
 """
