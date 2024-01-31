@@ -3,6 +3,9 @@
 function tha divides all elements of a matrix
 """
 def matrix_divided(matrix, div):
+    """
+        divides a matrix by div
+    """
     if div == 0:
         raise ZeroDivisionError("division by zero")
     if not isinstance(div, int):
