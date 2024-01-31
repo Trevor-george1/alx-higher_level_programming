@@ -44,3 +44,7 @@ ValueError: cannot convert float NaN to integer
 >>> add_integer(10**1000, 10**1000)
 Traceback (most recent call last):
 OverflowError: int too large to convert to float
+
+>>> add_integer(int('12'), 4)
+Traceback (most recent call last):
+ValueError: invalid literal for int() with base 10: '1e'
