@@ -36,3 +36,11 @@ TypeError: a must be an integer
 
 >>> add_integer(12.3, 9.8) #doctest: +REPORT_NDIFF
 21
+
+>>> add_integer(float("nan"), 4)
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
+
+>>> add_integer(10**1000, 10**1000)
+Traceback (most recent call last):
+OverflowError: int too large to convert to float
