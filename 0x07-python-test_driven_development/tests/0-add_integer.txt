@@ -51,3 +51,9 @@ OverflowError: int too large to convert to float
 >>> add_integer(1, float('inf'))
 Traceback (most recent call last):
 OverflowErrorError: cannot convert float infinity to integer
+
+>>> add_integer(True, True)
+2
+
+>>> add_integer(True, )
+99
