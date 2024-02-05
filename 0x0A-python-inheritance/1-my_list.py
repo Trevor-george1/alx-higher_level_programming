@@ -9,6 +9,7 @@ class MyList(list):
         prints the list in sorted form
     """
     def print_sorted(self):
-        new = []
-        new = sorted(self)
-        print(new)
+        """
+            print sorted list
+        """
+        print(sorted(self))
