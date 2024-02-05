@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#/usr/bin/python3
 """function that checksif an objct is an
 instance of a class directly or indirect"""
 
