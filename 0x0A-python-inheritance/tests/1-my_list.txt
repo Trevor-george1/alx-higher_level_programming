@@ -1,0 +1,32 @@
+import function from module:
+>>> MyList = __import__('1-my_list').MyList
+
+correct class Type test:
+>>> ml = MyList()
+>>> type(ml) == MyList
+True
+
+correct Instance test:
+>>> ml = MyList()
+>>> isinstance(ml, list)
+True
+
+print_sorted method is an instance method:
+>>> type(MyList.__dict__['print_sorted'])
+<class 'function'>
+
+Empty list test:
+>>> ml = MyList()
+>>> ml.print_sorted()
+[]
+
+Normal list test:
+>>> ml = MyList([2, 10, 1])
+>>> ml.print_sorted()
+[1, 2, 10]
+
+Test append:
+>>> ml = MyList()
+>>> ml.append(10)
+>>> ml
+[10]
