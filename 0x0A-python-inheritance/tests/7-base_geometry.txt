@@ -105,3 +105,8 @@ TypeError: foo must be an integer
 >>> bg.integer_validator("foo", {1, 2})
 Traceback (most recent call last):
 TypeError: foo must be an integer
+
+integer_validator method bool value:
+>>> bg.integer_validator("zar", True)
+Traceback (most recent call last):
+TypeError: zar must be an integer
