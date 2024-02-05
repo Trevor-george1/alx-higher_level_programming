@@ -51,6 +51,11 @@ print_sorted method called with no arguments
 Traceback (most recent call last):
 TypeError: print_sorted() missing 1 required positional argument: 'self'
 
+print_sorted method called with 1 argument
+>>> ml.print_sorted([4, 2, 5])
+Traceback (most recent call last):
+TypeError: print_sorted() takes 1 positional argument but 2 were given
+
 Negative ints list test:
 >>> ml = MyList([-1000, -98, -232565, 0, -23423434, -123])
 >>> ml.print_sorted()
