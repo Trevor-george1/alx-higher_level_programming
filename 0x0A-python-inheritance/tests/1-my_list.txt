@@ -25,6 +25,16 @@ Normal list test:
 >>> ml.print_sorted()
 [1, 2, 10]
 
+Normal list test 2:
+>>> ml = MyList([1, 4, 2, 3, 5])
+>>> ml.print_sorted()
+[1, ,2, ,3, 4, ,5]
+
+List already in order:
+>>> ml.MyList([-10, 0, 1, 2])
+>>> ml.print_sorted()
+[-10, 0, 1, 2]
+
 Test append:
 >>> ml = MyList()
 >>> ml.append(10)
@@ -40,3 +50,8 @@ print_sorted method called with no arguments
 >>> ml.__class__.print_sorted()
 Traceback (most recent call last):
 TypeError: print_sorted() missing 1 required positional argument: 'self'
+
+Negative ints list test:
+>>> ml = MyList([-100, -98, -232565, 0, -23423434, -123])
+>>> ml.print_sorted()
+[-23423434, -232565, -1000, -123, -98, 0]
