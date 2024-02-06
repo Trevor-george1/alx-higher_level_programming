@@ -10,4 +10,4 @@ class Student:
         self.age = age
     """method to_json"""
     def to_json(self):
-        return self.__dict__    
+        return self.__dict__
