@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """square class that inherits from Rectangle class"""
 from models.rectangle import Rectangle
+from inspect import classify_class_attrs
 
 
 class Square(Rectangle):
@@ -11,7 +12,8 @@ class Square(Rectangle):
 
     def __str__(self):
         """__str__function"""
-        return ("[Square] ({}) {:d}/{:d} - {:d}".format(self.id, self.x, self.y, self.size))
+        return ("[Square] ({}) {:d}/{:d} - {:d}".
+                format(self.id, self.x, self.y, self.size))
 
     @property
     def size(self):
@@ -27,13 +29,21 @@ class Square(Rectangle):
             raise ValueError("width must be > 0")
         self.width = value
         self.height = value
-    
+
     def update(self, *args, **kwargs):
         """public method"""
         if args is not None and len(args) is not 0:
             list_attr = ['id', 'size', 'x', 'y']
             for i in range(len(args)):
-                setattr(self, list_attr[i], args[i])
+                if list_attr[i] == 'size':
+                    setattr(self, 'width', args[i])
+                    setattr(self, 'height', args[i])
+                else:
+                    setattr(self, list_attr[i], args[i])
         else:
             for key, value in kwargs.items():
-                setattr(self, key, value)
+                if key == 'size':
+                    setattr(self, 'width', value)
+                    setattr(self, 'height', value)
+                else:
+                    setattr(self, key, value)
