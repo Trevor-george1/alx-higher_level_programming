@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """program that creates Base class"""
-
+import json
 
 class Base:
     """"private attribute"""
