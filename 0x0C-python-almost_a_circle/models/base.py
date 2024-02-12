@@ -17,5 +17,4 @@ class Base:
         """returns  json representation of list dictionaries"""
         if list_dictionaries is None or list_dictionaries == "[]":
             return "[]"
-        else:
-            return json.dump(list_dictionaries)
+        return json.dumps(list_dictionaries)
