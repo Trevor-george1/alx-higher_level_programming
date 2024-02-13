@@ -49,6 +49,7 @@ class Square(Rectangle):
                     setattr(self, 'height', value)
                 else:
                     setattr(self, key, value)
+
     def to_dictionary(self):
         """public method that returns the dictionary"""
         dict1 = self.__dict__
