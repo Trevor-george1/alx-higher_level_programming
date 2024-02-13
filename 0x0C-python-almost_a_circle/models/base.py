@@ -28,7 +28,7 @@ class Base:
         list_dic = []
 
         if not list_objs:
-            pass
+            list_dic.append(list_objs.to_dictionary())
         else:
             for i in range(len(list_objs)):
                 list_dic.append(list_objs[i].to_dictionary())
