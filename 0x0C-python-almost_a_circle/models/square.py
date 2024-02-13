@@ -5,6 +5,7 @@ from inspect import classify_class_attrs
 
 
 class Square(Rectangle):
+    """class square"""
     def __init__(self, size, x=0, y=0, id=None):
         """constructor- calls super class using logic for Rectangle __init__
         """
