@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""script that lists all states from database"""
+"""script that filters all states from database that starts with N"""
 import MySQLdb
 from sys import argv
 
@@ -12,6 +12,7 @@ if __name__ == "__main__":
     cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
     rows = cur.fetchall()
     for row in rows:
-        print(row)
+        if row[1][0] == 'N':
+            print(row)
     cur.close()
     db.close()
