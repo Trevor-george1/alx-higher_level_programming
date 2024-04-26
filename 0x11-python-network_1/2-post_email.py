@@ -21,4 +21,3 @@ if __name__ == '__main__':
     # Make a POST request
     with urllib.request.urlopen(url, data=encoded_data) as response:
         print(response.read().decode('utf-8'))
-
