@@ -20,5 +20,5 @@ if __name__ == '__main__':
 
     # Make a POST request
     with urllib.request.urlopen(url, data=encoded_data) as response:
-        body = response.read().decode('utf-8')
-        print("Your email is: {}".format(body))
+        print(response.read().decode('utf-8'))
+
